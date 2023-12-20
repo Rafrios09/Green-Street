@@ -38,7 +38,9 @@ header .navbar {
 .navbar .menu-links {
   display: flex;
   list-style: none;
-  gap: 35px;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
 }
 
 .navbar a {
