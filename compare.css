@@ -1,0 +1,253 @@
+0/* styles.css */
+/* Importing Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+  overflow: visible;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  /* background-color: #f7f6ee; */
+  background-color: rgb(247 246 238 / 80%);
+  z-index: 4;
+  height: 10vh;
+  padding: 25px 0;
+
+}
+
+header .navbar {
+  display: flex;
+
+  width: 90%;
+  margin: auto;
+  align-items:center;
+  /* background-color: #f7f6ee; */
+  background-color: rgb(247 246 238 / 0%);
+  height: 100%;
+  /* justify-content: space-evenly;
+  flex-direction: column-reverse;
+  flex-wrap:wrap;
+  align-content:stretch;
+  justify-content:space-evenly;
+  align-items:center;
+ */
+}
+
+
+.navbar .logo img {
+  object-fit: contain;
+  max-width: 260px;
+  min-height: 68px;
+  max-height: 90px;
+  min-width: 160px;
+  width: 100%;
+}
+
+
+
+.navbar .menu-links {
+  display: flex;
+  text-align: center;
+  list-style: none;
+  margin-left: 10px;
+}
+
+.navbar a {
+  color: #2E614D;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: 0.2s ease;
+  white-space: nowrap;
+}
+
+
+#navbtn2 {
+  display: none;
+}
+
+#navbtn {
+  background-color: #ACBB96;
+  color: #F7F6EE;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-left: auto;
+  white-space: wrap;
+  text-align: center;
+}
+
+#navbtn:hover {
+  padding: 20px 25px;
+}
+
+.navbar a:hover {
+  transition: 0.3s;
+  color: #ACBB96;
+}
+
+
+#close-menu-btn {
+  position: absolute;
+  right: 5px;
+  top: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#hamburger-btn {
+  color: #2e614d;
+  cursor: pointer;
+  display: none;
+  margin: 10px;
+}
+
+/* mobile navbar start */
+@media (max-width: 1228px) {
+  header {
+    height: 10vh;
+  }
+
+  header .navbar {
+    height: 100%;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+  }
+
+  header.show-mobile-menu::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+
+  .navbar .logo {
+    width: 46%;
+  }
+
+  .navbar .logo img {
+    max-height: 100%;
+    max-width: 40%;
+  }
+
+  #hamburger-btn,
+  #close-menu-btn {
+    display: block;
+    margin: 10px;
+  }
+
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 250px;
+    background: #E7E3D5;
+    /*mobile navbar background*/
+    color: #2E614D;
+    font-weight: 400px;
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
+    height: 100%;
+    z-index: 4;
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: -10px;
+  }
+
+  .navbar a {
+    color: #2e614d;
+  }
+
+  #navbtn {
+    display: none;
+  }
+
+  #navbtn2 {
+    display: block;
+    background-color: #ACBB96;
+    color: #F7F6EE;
+    font-size: 12.4px;
+    font-weight: 600;
+    padding: 15px 10px;
+    border-radius: 5px;
+    text-align: center;
+    overflow: auto;
+    white-space: normal;
+    width: 100%;
+  }
+
+}
+
+/* mobile navbar end */
+
+
+
+.navbar {
+  background-color: #E7E3D5;
+  max-height: 90px;
+  justify-content: flex;
+  align-items: baseline;
+}
+
+
+
+li {
+  margin: 10px;
+}
+
+.comparison-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.comparison-column {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 10px;
+  text-align: center;
+}
+
+.comparison-column img {
+  max-width: 100%;
+  height: auto;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height:50%;
+
+}

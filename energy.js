@@ -1,12 +1,11 @@
 //Navigation bar replication
 const nav = document.querySelector(".navbar");
-const navCode = `<a class="logo" href="index.html"><img src="/Images/RealLogo.png" alt="Green Street"></a>
+const navCode = `<a class="logo" href="index.html"><img src="/Images/Transparentbacklogo.png" alt="Green Street"></a>
       <ul class="menu-links">
         <span id="close-menu-btn" class="material-symbols-outlined">close</span>
         <li><a href="index.html">Home</a></li>
-        <li><a href="energy_solutions.html">Energy Solutions</a></li>
-        <li><a href="jC.html">Compare</a></li>
-        <li><a href="Compare.html">About us</a></li>
+        <li><a href="Compare.html">Compare</a></li>
+        <li><a href="jC.html">About us</a></li>
         <li><a href="Contactus.html">Contact us</a></li>
         <li><a href="#"><a href="#" id="navbtn2">SIGN UP FOR OUR NEWSLETTER!</a></a></li>
       </ul>
@@ -22,5 +21,5 @@ hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobil
 // Close mobile menu on close button click
 closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
 
-    
+
 

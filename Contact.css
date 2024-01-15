@@ -1,0 +1,10 @@
+.navbar {
+  background-color: #E7E3D5;
+  max-height: 90px;
+  justify-content: flex;
+  align-items: baseline;
+}
+.navbar a {
+  color: #2e614d;
+}
+
