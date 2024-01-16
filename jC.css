@@ -353,6 +353,22 @@ li {
     color: #2E614D;
 }
 
+.options .note, .options2 .note{
+  display: flex;
+  padding: 0 16px;
+  border-radius: 8px;
+  align-items: center;
+  background: #f7f6ee;
+  color: #2E614D;
+  cursor: auto;
+  text-decoration: none;
+}
+
+.note note-text{
+    font-size: 18px;
+    color: #2E614D;
+}
+
 @media(max-width: 620px){
   .select-menu, .select-menu2{
     width: 45%;
