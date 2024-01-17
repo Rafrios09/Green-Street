@@ -6,7 +6,7 @@ const navCode = `<a class="logo" href="index.html"><img src="/Images/RealLogo.pn
         <li><a href="index.html">Home</a></li>
         <li><a href="energy_solutions.html">Energy Solutions</a></li>
         <li><a href="jC.html">Compare</a></li>
-        <li><a href="Compare.html">About us</a></li>
+        <li><a href="about.html">About us</a></li>
         <li><a href="#"><a href="#" id="navbtn2">SIGN UP FOR OUR NEWSLETTER!</a></a></li>
       </ul>
       <a href="#" id="navbtn">SIGN UP FOR OUR NEWSLETTER!</a>
