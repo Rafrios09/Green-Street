@@ -13,10 +13,18 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
-body {
-  scroll-behavior: smooth;
-  overflow: visible;
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top: 10vh;
+    }
+@keyframes smooth-scroll{
+  to{
+      body{
+            scroll-behavior: smooth;
+            overflow: visible;
+            animation: smooth-scroll 5s ease-in-out;
+          }
+    }
 }
 
 header {

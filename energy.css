@@ -11,9 +11,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html{scroll-behavior:smooth;
+    scroll-padding-top:10vh;
+    }
+@keyframes smooth-scroll{
+  to{
 body {
   scroll-behavior: smooth;
+  overflow: visible;
+  animation: smooth-scroll 2s ease-in-out;
+}
+  }
 }
 
 header {

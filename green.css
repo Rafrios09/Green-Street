@@ -12,10 +12,18 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
-body {
-  scroll-behavior: smooth;
-  overflow: visible;
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top: 10vh;
+    }
+@keyframes smooth-scroll{
+  to{
+      body{
+            scroll-behavior: smooth;
+            overflow: visible;
+            animation: smooth-scroll 5s ease-in-out;
+          }
+    }
 }
 
 header {
@@ -328,7 +336,7 @@ li {
 
 .img-slider .slide .info a {
   color: #F7F6EE;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Yeseva One', sans-serif;
   font-size: 1.1rem;
   padding: .9rem 2rem;
   background-color: #ACBB96;
@@ -345,7 +353,22 @@ li {
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
+}
 
+.img-slider .navigation1 {
+  z-index: 2;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f7f6ee;
+  height: 30px;
+}
+
+.link-bx{
+  text-decoration: none;
+  font-size: 25px;
+  color: #f7f6ee;
 }
 
 .img-slider .navigation .btn {
@@ -388,6 +411,24 @@ li {
     bottom: 25px;
   }
 
+
+  .img-slider .navigation1 {
+    z-index: 2;
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f7f6ee;
+    height: 25px;
+  }
+
+  .link-bx{
+    text-decoration: none;
+    font-size: 25px;
+    color: #f7f6ee;
+    height: 25px;
+  }
+  
   .img-slider .navigation .btn {
     width: 12px;
     height: 12px;
@@ -417,7 +458,7 @@ li {
   }
 
   .img-slider .navigation {
-    bottom: 15px;
+    bottom: 20px;
   }
 
   .img-slider .navigation .btn {
@@ -447,7 +488,7 @@ li {
   }
 
   .img-slider .navigation {
-    border-bottom: 10px;
+    border-bottom: 20px;
   }
 
 
