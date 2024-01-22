@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- This page is to try to see if we can do compage pg like apple-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GS - Compare Energies</title>
+    <link rel="icon" href="/Images/Transparentbacklogo.png" />
+    <link rel="stylesheet" href="css/jC.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar"></nav>
+    </header>
+
+    <!-- Comparison  container start-->
+
+    <div class="section1">
+      <div class="stats-content">
+        <h2>Compare Energies</h2>
+        <p class="text1 small-text">Find out which one is the best for you!</p>
+      </div>
+      <div class="dropdown-container">
+        <div class="select-menu">
+          <div class="select-btn">
+            <span class="sBtn-text">Select an energy</span>
+            <i class="bx bx-chevron-down"></i>
+          </div>
+
+          <ul class="options">
+            <li class="option">
+              <span class="option-text">Natural Gas</span>
+            </li>
+            <li class="option">
+              <span class="option-text">Solar Energy</span>
+            </li>
+            <li class="option">
+              <span class="option-text">Wind Energy</span>
+            </li>
+            <li class="option">
+              <span class="option-text">Geothermal Energy</span>
+            </li>
+            <li class="option">
+              <span class="option-text">Hydro Energy</span>
+            </li>
+            <li class="note">
+              <span class="note-text"
+                >Note: Please close both drop-down menus to see the
+                comparisons.</span
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="select-menu2">
+          <div class="select-btn2">
+            <span class="sBtn-text2">Select an energy</span>
+            <i class="bx bx-chevron-down"></i>
+          </div>
+
+          <ul class="options2">
+            <li class="option2">
+              <span class="option-text2">Natural Gas</span>
+            </li>
+            <li class="option2">
+              <span class="option-text2">Solar Energy</span>
+            </li>
+            <li class="option2">
+              <span class="option-text2">Wind Energy</span>
+            </li>
+            <li class="option2">
+              <span class="option-text2">Geothermal Energy</span>
+            </li>
+            <li class="option2">
+              <span class="option-text2">Hydro Energy</span>
+            </li>
+            <li class="note">
+              <span class="note-text"
+                >Note: Please close both drop-down menus to see the
+                comparisons.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-container">
+        <div class="option1-info"></div>
+        <div class="option2-info"></div>
+      </div>
+    </div>
+
+    <!-- Comparison  container end-->
+
+    <!-- Subsribe Form start -->
+
+    <div class="newsltr-Container"></div>
+
+    <!-- Subsribe Form end -->
+
+    <!-- Footer section start -->
+    <footer class="section5-Container">
+      <div class="footer-flex">
+        <div class="site-map">
+          <h2>Sitemap</h2>
+          <div class="link-flex">
+            <a href="index.html">Home</a>
+            <a href="energy_solutions.html">Energy Solutions</a>
+            <a href="jC.html">Compare</a>
+            <a href="Compare.html">About Us</a>
+            <a href="Contactus.html">Contact us</a>
+          </div>
+        </div>
+        <div class="logo-Container">
+          <div class="email">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="16"
+              viewBox="0 0 512 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+              /></svg
+            ><a href="mailto:Greenstreet3301@gmail.com">
+              <p>Greenstreet3301@gmail.com</p></a
+            >
+          </div>
+          <div class="img-margin">
+            <a href="#" id="FooterLogo.png">
+              <img src="/Images/FooterLogo.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section end -->
+
+    <script src="green.js"></script>
+    <script type="text/javascript">
+      const optionMenu = document.querySelector(".select-menu"),
+        selectBtn = optionMenu.querySelector(".select-btn"),
+        options = optionMenu.querySelectorAll(".option"),
+        sBtn_text = optionMenu.querySelector(".sBtn-text");
+      var optionInfo = document.querySelector(".option1-info");
+
+      selectBtn.addEventListener("click", () =>
+        optionMenu.classList.toggle("active")
+      );
+
+      options.forEach((option) => {
+        option.addEventListener("click", () => {
+          let selectedOption = option.querySelector(".option-text").innerText;
+          sBtn_text.innerText = selectedOption;
+
+          if (sBtn_text.innerText == "Solar Energy") {
+            optionInfo.innerHTML = `
+                <div class="info-unit">
+                  <img src="/Images/1-Solar.png">
+                </div>
+                <div class="info-unit">
+                  <h2>Example TOPIC2.1</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Solar TOPIC2.2</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Solar TOPIC2.3</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Solar TOPIC2.4</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Solar TOPIC2.5</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Solar TOPIC2.6</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>`;
+          }
+
+          if (sBtn_text.innerText == "Natural Gas") {
+            optionInfo.innerHTML = `
+                <div class="info-unit">
+                  <img src="/Images/1-Gas.png">
+                </div>
+                <div class="info-unit">
+                  <h2>Gas TOPIC2.1</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Gas TOPIC2.2</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Gas TOPIC2.3</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Gas TOPIC2.4</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Gas TOPIC2.5</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Gas TOPIC2.6</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>`;
+          }
+
+          if (sBtn_text.innerText == "Wind Energy") {
+            optionInfo.innerHTML = `
+              <div class="info-unit">
+                <img src="/Images/1-Wind.png">
+              </div>
+              <div class="info-unit">
+                <h2>Wind TOPIC2.1</h2>
+                <p>Lorem ipsum dolor sit amet<p>
+              </div>
+              <div class="info-unit">
+                <h2>Wind TOPIC2.2</h2>
+                <p>Lorem ipsum dolor sit amet<p>
+              </div>
+              <div class="info-unit">
+                <h2>Wind TOPIC2.3</h2>
+                <p>Lorem ipsum dolor sit amet<p>
+              </div>
+              <div class="info-unit">
+                <h2>Wind TOPIC2.4</h2>
+                <p>Lorem ipsum dolor sit amet<p>
+              </div>
+              <div class="info-unit">
+                <h2>Wind TOPIC2.5</h2>
+                <p>Lorem ipsum dolor sit amet<p>
+              </div>
+              <div class="info-unit">
+                <h2>Wind TOPIC2.6</h2>
+                <p>Lorem ipsum dolor sit amet<p>
+              </div>`;
+          }
+
+          if (sBtn_text.innerText == "Geothermal Energy") {
+            optionInfo.innerHTML = `
+                <div class="info-unit">
+                  <img src="/Images/1-Geo.png">
+                </div>
+                <div class="info-unit">
+                  <h2>Geo TOPIC2.1</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Geo TOPIC2.2</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Geo TOPIC2.3</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Geo TOPIC2.4</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Geo TOPIC2.5</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Geo TOPIC2.6</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>`;
+          }
+
+          if (sBtn_text.innerText == "Hydro Energy") {
+            optionInfo.innerHTML = `
+                <div class="info-unit">
+                  <img src="/Images/1-Hydro.png">
+                </div>
+                <div class="info-unit">
+                  <h2>Hydro TOPIC2.1</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Hydro TOPIC2.2</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Hydro TOPIC2.3</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Hydro TOPIC2.4</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Hydro TOPIC2.5</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Hydro TOPIC2.6</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>`;
+          }
+
+          optionMenu.classList.remove("active");
+        });
+      });
+
+      const optionMenu2 = document.querySelector(".select-menu2"),
+        selectBtn2 = optionMenu2.querySelector(".select-btn2"),
+        options2 = optionMenu2.querySelectorAll(".option2"),
+        sBtn_text2 = optionMenu2.querySelector(".sBtn-text2");
+      var optionInfo2 = document.querySelector(".option2-info");
+
+      selectBtn2.addEventListener("click", () =>
+        optionMenu2.classList.toggle("active")
+      );
+
+      options2.forEach((option) => {
+        option.addEventListener("click", () => {
+          let selectedOption2 = option.querySelector(".option-text2").innerText;
+          sBtn_text2.innerText = selectedOption2;
+
+          if (sBtn_text2.innerText == "Solar Energy") {
+            optionInfo2.innerHTML = `
+                <div class="info-unit">
+                  <img src="/Images/1-Solar.png">
+                </div>
+                <div class="info-unit">
+                  <h2>Example TOPIC2.1</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Solar TOPIC2.2</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Solar TOPIC2.3</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Solar TOPIC2.4</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Solar TOPIC2.5</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Solar TOPIC2.6</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>`;
+          }
+
+          if (sBtn_text2.innerText == "Natural Gas") {
+            optionInfo2.innerHTML = `
+                <div class="info-unit">
+                  <img src="/Images/1-Gas.png">
+                </div>
+                <div class="info-unit">
+                  <h2>Gas TOPIC2.1</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Gas TOPIC2.2</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Gas TOPIC2.3</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Gas TOPIC2.4</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Gas TOPIC2.5</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Gas TOPIC2.6</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>`;
+          }
+
+          if (sBtn_text2.innerText == "Wind Energy") {
+            optionInfo2.innerHTML = `
+              <div class="info-unit">
+                <img src="/Images/1-Wind.png">
+              </div>
+              <div class="info-unit">
+                <h2>Wind TOPIC2.1</h2>
+                <p>Lorem ipsum dolor sit amet<p>
+              </div>
+              <div class="info-unit">
+                <h2>Wind TOPIC2.2</h2>
+                <p>Lorem ipsum dolor sit amet<p>
+              </div>
+              <div class="info-unit">
+                <h2>Wind TOPIC2.3</h2>
+                <p>Lorem ipsum dolor sit amet<p>
+              </div>
+              <div class="info-unit">
+                <h2>Wind TOPIC2.4</h2>
+                <p>Lorem ipsum dolor sit amet<p>
+              </div>
+              <div class="info-unit">
+                <h2>Wind TOPIC2.5</h2>
+                <p>Lorem ipsum dolor sit amet<p>
+              </div>
+              <div class="info-unit">
+                <h2>Wind TOPIC2.6</h2>
+                <p>Lorem ipsum dolor sit amet<p>
+              </div>`;
+          }
+
+          if (sBtn_text2.innerText == "Geothermal Energy") {
+            optionInfo2.innerHTML = `
+                <div class="info-unit">
+                  <img src="/Images/1-Geo.png">
+                </div>
+                <div class="info-unit">
+                  <h2>Geo TOPIC2.1</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Geo TOPIC2.2</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Geo TOPIC2.3</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Geo TOPIC2.4</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Geo TOPIC2.5</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Geo TOPIC2.6</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>`;
+          }
+
+          if (sBtn_text2.innerText == "Hydro Energy") {
+            optionInfo2.innerHTML = `
+                <div class="info-unit">
+                  <img src="/Images/1-Hydro.png">
+                </div>
+                <div class="info-unit">
+                  <h2>Hydro TOPIC2.1</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Hydro TOPIC2.2</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Hydro TOPIC2.3</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Hydro TOPIC2.4</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Hydro TOPIC2.5</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>
+                <div class="info-unit">
+                  <h2>Hydro TOPIC2.6</h2>
+                  <p>Lorem ipsum dolor sit amet<p>
+                </div>`;
+          }
+
+          optionMenu2.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+  <!-- This page is to try to see if we can do compage pg like apple-->
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/compare.js"></script>
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/compare.css"
+      rel="stylesheet"
+    />
+    <title>Green Street - Compare Energies</title>
+    <link rel="icon" href="/Images/Transparentbacklogo.png" />
+    <link rel="stylesheet" href="css/compare.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar"></nav>
+      <h1>Subject Comparison</h1>
+    </header>
+
+    <div class="comparison-container">
+      <div class="comparison-column">
+        <img src="1-Hydro.png" alt="Hydro" />
+        <h2>Hydro</h2>
+        <p>Description of Hydro</p>
+      </div>
+
+      <div class="comparison-column">
+        <img src="1-Solar.png" alt="Solar" />
+        <h2>Solar</h2>
+        <p>Description of Solar</p>
+      </div>
+
+      <div class="comparison-column">
+        <img src="1-Wind.png" alt="Wind" />
+        <h2>Wind</h2>
+        <p>Description of Wind</p>
+      </div>
+
+      <div class="comparison-column">
+        <img src="1-Geo.png" alt="Geothermal" />
+        <h2>Geothermal</h2>
+        <p>Description of Geothermal</p>
+      </div>
+    </div>
+    <script src="compare.js">
+      // Add your Mapbox access token.
+      mapboxgl.accessToken = 'pk.eyJ1IjoiZ3JlZW5zdCIsImEiOiJjbHI5Zml0OWQwMmZkMnBxbjI5dmNvem9hIn0.mxYtwQMrvCsXmr2BTJtDTQ';
+      const map = new mapboxgl.Map({
+        container: 'map', // HTML container ID
+        style: 'mapbox://styles/mapbox/streets-v12', // style URL
+        center: [-21.9270884, 64.1436456], // starting position [lng, lat]
+        zoom: 13 // starting zoom
+      });
+      // Code from the next step will go here.
+      const marker = new mapboxgl.Marker()
+      .setLngLat([-21.9270884, 64.1436456])
+      .addTo(map);
+    </script>
+  </body>
+</html>

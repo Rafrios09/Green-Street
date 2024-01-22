@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Street</title>
+  <link rel="icon"  href="../Images/Transparentbacklogo.png">
+  <link rel="stylesheet" href="css/green.css">
+  <link rel="stylesheet" href="main.scss">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+    </nav>
+  </header>
+  <!-- image slider start-->
+  <div class="sliderContainer">
+    <div class="img-slider">
+      <div class="slide active">
+      <img src="/Images/Solarpanels.jpg" alt="Image not Available">
+        <div class="info">
+          <h2>Solar Energy</h2>
+          <p>Energy harnessed from rays of the Sun</p>
+          <a href="energy_solutions.html#energy1">LEARN MORE</a>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="/Images/Dam.jpg" alt="Image not Available">
+        <div class="info">
+          <h2>Hydro Energy</h2>
+          <p>Energy harnessed from the flow of rivers</p>
+          <a href="energy_solutions.html#energy2">LEARN MORE</a>
+        </div>
+      </div>
+      <div class="slide">
+      <img src="/Images/WindFarm.jpg" alt="Image not Available">
+        <div class="info">
+          <h2>Wind Energy</h2>
+          <p>Energy harnessed from the flow of wind</p>
+          <a href="energy_solutions.html#energy3">LEARN MORE</a>
+        </div>
+      </div>
+      <div class="slide">
+      <img src="/Images/Geothermal2.jpg" alt="Image not Available">
+        <div class="info">
+          <h2>Geothermal Energy</h2>
+          <p>Energy harnessed from the flow of wind</p>
+          <a href="energy_solutions.html#energy4">LEARN MORE</a>
+        </div>
+      </div>
+      <div class="next-btn">
+        <i class='bx bx-chevron-right next'></i>
+      </div>
+      <div class="prev-btn">
+        <i class='bx bx-chevron-left prev' ></i>
+      </div>
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+      <div class="navigation1">
+        <a class="link-bx" href="#cont-en1"><i class="bx bx-chevron-down"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- image slider end -->
+
+
+  <!-- Energy Stats section start-->
+
+  <div class="EnergyStats-Container" id="cont-en1">
+    <div class="stats-content">
+      <h2>Energy Growth</h2>
+      <p class="small-text text1">Some of the accelerating growth of renewable energies around the US in the past 5
+        years</p>
+      <div class="image-section">
+        <div class="content-unit">
+          <h4 class="bigNum">44%</h4>
+          <p class="small-text">average increase PER YEAR in the usage of solar related energy sources from 2009 to 2022</p>
+        </div>
+        <div class="content-unit">
+          <h4 class="bigNum">28.7%</h4>
+          <p class="small-text">of all renewable energy sources are attributed to hydropower alone</p>
+        </div>
+        <div class="content-unit">
+          <h4 class="bigNum">22%</h4>
+          <p class="small-text">of newer electrical installments in 2022 were wind based energy sources, according to the U.S. Department of Energy</p>
+        </div>
+        <div class="content-unit">
+          <h4 class="bigNum">6.2%</h4>
+          <p class="small-text">of the total electrical generation within the United States came from hydropowered energy sources in 2022</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Energy Stats section end -->
+
+  <!-- Map section start -->
+
+  <div class="sectionM bg-light">
+    <div class="title5Color"> 
+      <div class="contTitle contTitle1">
+        <h2>Map</h2>
+      </div>
+      <p class="small-text4">Subtxt for map</p>
+    </div>
+    <div class="map-container">
+      <div id="map">
+        <div id="legend">
+          <div class="legend-Title">Legend</div>
+          <div class="key">
+            <div class="shape1"></div>
+            <div class="keyText">Solar Plants</div>
+          </div>
+          <div class="key">
+            <div class="shape2"></div>
+            <div class="keyText">Hydroelectric Plants(approx. location)</div>
+          </div>
+          <div class="key">
+            <div class="shape3"></div>
+            <div class="keyText">Wind Power Plants(approx. location)</div>
+          </div>
+          <div class="key">
+            <div class="shape4"></div>
+            <div class="keyText">Major Geothermal Plants</div>
+          </div>
+          <div class="key">
+            <div class="shape5"></div>
+            <div class="keyText">Other Geothermal Plants(approx. location)</div>
+          </div>
+        </div>
+      </div>
+      <div class="legend-m-containter">
+        <div class="legend-Title">Legend</div>
+        <div id="legend-m">
+         <div class="key-m">
+           <div class="shape1-m"></div>
+           <div class="keyText-m">Solar Plants</div>
+         </div>
+         <div class="key-m">
+           <div class="shape2-m"></div>
+           <div class="keyText-m">Hydroelectric Plants(approx. location)</div>
+         </div>
+         <div class="key-m">
+           <div class="shape3-m"></div>
+           <div class="keyText-m">Wind Power Plants(approx. location)</div>
+         </div>
+         <div class="key-m">
+           <div class="shape4-m"></div>
+           <div class="keyText-m">Major Geothermal Plants</div>
+         </div>
+          <div class="key-m">
+             <div class="shape5-m"></div>
+             <div class="keyText-m">Other Geothermal Plants(approx. location)</div>
+           </div>
+       </div>
+      </div>
+    </div>
+  </div>
+   <p class="Note">NOTE: The blurred dots represent the approximate locations of their respective plants or grids.</p>
+
+  <script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiZ3JlZW5zdCIsImEiOiJjbHI5Zml0OWQwMmZkMnBxbjI5dmNvem9hIn0.mxYtwQMrvCsXmr2BTJtDTQ';
+const bounds = [
+[-196.2459868163224, 7.537676985666138], // Southwest coordinates
+[-14.05532327118874, 73.675578800453] // Northeast coordinates
+];
+const map = new mapboxgl.Map({
+container: 'map',
+// Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+style: 'mapbox://styles/greenst/clrfh0c0800ag01pi8n9c1btn',
+zoom: 3,
+center: [-98.3222, 39.7422],
+projection: 'mercator',
+maxBounds: bounds // Set the map's geographical boundaries.
+});
+
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
+
+// disable map rotation using right click + drag
+//map.dragRotate.disable();
+
+// disable map rotation using touch rotation gesture
+//map.touchZoomRotate.disableRotation();
+ 
+map.on('load', () => {
+// Set the default atmosphere style
+map.setFog({});
+});
+</script>
+
+  
+  <!-- Map section end  -->
+
+  <!-- Why Green Energy Section start -->
+
+  <div class="section3-Container">
+    <div class="company-name">
+      <h4>Green Street</h4>
+    </div>
+    <div class="bigQuestion">
+      <h2>Why choose green energy?</h2>
+    </div>
+    <div class="answer">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+  </div>
+
+  <!-- Why Green Energy Section end -->
+
+  <!-- Green Energy Aesthetic Pleasing Image Section Start -->
+
+  <div class="section4-Container">
+    <div class="pic-title">
+      <h2>Green Energy Aesthetics</h2>
+      <p>Green energy technology can develop aesthetics when installed.</p>
+      <div class="grid-images">
+        <div class="grid-pic">
+          <img src="/Images/WaterMIILL.jpg">
+        </div>
+        <div class="grid-pic">
+          <img src="/Images/SolarHouse.jpg">
+        </div>
+        <div class="grid-pic">
+          <img src="/Images/Windmills.jpg">
+        </div>
+        <div class="grid-pic">
+          <img src="/Images/SolarStadium.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Green Energy Aesthetic Pleasing Image Section Ends -->
+
+ 
+
+
+  <!-- Subscribe Form start-->
+
+  <div class="newsltr-Container" id="newsltr">
+    <div class="right">
+      <div id="signup" class="inner-form">
+        <p class="notify">Get notified for updates!</p>
+
+        <form action="/subscribe" method="POST">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="your email"
+            required
+            pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+          <p id="error" class="error">Please enter an email</p>
+          <input type="submit" value="Notify Me" class="button" id="cta" />
+        </form>
+      </div>
+
+    </div>
+    <div id="success" class="inner-form" >
+      <h2>Confirm your email!</h2>
+      <p>The last step is to confirm your email. Give it a couple of minutes!</p>
+    </div>
+  </div>
+
+  <!-- Subscribe Form end-->
+
+  <!-- Footer section start -->
+  <footer class="section5-Container">
+    <div class="footer-flex">
+      <div class="site-map">
+         <h2>Sitemap</h2>
+         <div class="link-flex">
+           <a href="index.html">Home</a>
+           <a href="energy_solutions.html">Energy Solutions</a>
+           <a href="jC.html">Compare</a>
+           <a href="Compare.html">About Us</a>
+           <a href="Contactus.html">Contact us</a>
+         </div>
+       </div>
+     <div class="logo-Container">
+       <div class="email">
+         <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg><a href="mailto:Greenstreet3301@gmail.com">
+           <p>Greenstreet3301@gmail.com</p></a>
+       </div>
+      <div class="img-margin">
+        <a href="#" id="FooterLogo.png">
+        <img src="/Images/FooterLogo.png">
+        </a>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- Footer section end -->
+
+  <script src="green.js"></script>
+  <!--Duplicating the navbar on every page-->
+
+  <script>
+    //Form Submission
+
+    let cta = document.getElementById("cta");
+    let email = document.getElementById("email");
+    let error = document.getElementById("error");
+    let success = document.getElementById("success");
+    let signup = document.getElementById("signup");
+
+    cta.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      if (this.email.value == null || this.email.value == "") {
+        error.classList.add("errorAnim");
+      } else {
+        let fetchData = {
+          method: "POST",
+          body: JSON.stringify({ email: this.email.value, js: true }),
+          headers: { "Content-Type": "application/json" },
+        };
+
+        fetch("/subscribe", fetchData).then((res) => {
+          if (res.ok) {
+            signup.classList.add('fadeout');
+            setTimeout(() => {
+              success.classList.add('fadein');
+              signup.style.display = 'none';
+            }, 1000)
+          } else {
+            error.classList.add("errorAnim");
+          }
+        });
+      }
+    });
+  </script>
+  <!--Newslettter code-->
+  
+  <script type="text/javascript">
+    const slider = document.querySelector(".img-slider");
+      const nextBtn = document.querySelector(".next-btn");
+      const prevBtn = document.querySelector(".prev-btn");
+      const slides = document.querySelectorAll(".slide");
+      const slideIcons = document.querySelectorAll(".btn");
+      const numberOfSlides = slides.length;
+      var slideNumber = 0;
+    console.log(numberOfSlides);
+
+      slideIcons.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          slideNumber = i;
+
+          slides.forEach((slide) => {
+            slide.classList.remove("active");
+          });
+          slideIcons.forEach((slideIcon) => {
+            slideIcon.classList.remove("active");
+
+            slides[slideNumber].classList.add("active");
+            slideIcons[slideNumber].classList.add("active");
+          });
+        });
+
+          slides[slideNumber].classList.add("active");
+          slideIcons[slideNumber].classList.add("active");
+      });
+      //image slider next button
+      nextBtn.addEventListener("click", () => {
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+        slideIcons.forEach((slideIcon) => {
+          slideIcon.classList.remove("active");
+        });
+
+        slideNumber++;
+
+        if(slideNumber > (numberOfSlides - 1)){
+          slideNumber = 0;
+        }
+
+        slides[slideNumber].classList.add("active");
+        slideIcons[slideNumber].classList.add("active");
+      });
+
+      //image slider previous button
+      prevBtn.addEventListener("click", () => {
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+        slideIcons.forEach((slideIcon) => {
+          slideIcon.classList.remove("active");
+        });
+
+        slideNumber--;
+
+        if(slideNumber < 0){
+          slideNumber = numberOfSlides - 1;
+        }
+
+        slides[slideNumber].classList.add("active");
+        slideIcons[slideNumber].classList.add("active");
+      });
+
+      //image slider autoplay
+      var playSlider;
+
+      var repeater = () => {
+        playSlider = setInterval(function(){
+          slides.forEach((slide) => {
+            slide.classList.remove("active");
+          });
+          slideIcons.forEach((slideIcon) => {
+            slideIcon.classList.remove("active");
+          });
+
+          slideNumber++;
+
+          if(slideNumber > (numberOfSlides - 1)){
+            slideNumber = 0;
+          }
+
+          slides[slideNumber].classList.add("active");
+          slideIcons[slideNumber].classList.add("active");
+        }, 4000);
+      }
+      repeater();
+
+      //stop the image slider autoplay on mouseover
+      slider.addEventListener("mouseover", () => {
+        clearInterval(playSlider);
+      });
+
+      //start the image slider autoplay again on mouseout
+      slider.addEventListener("mouseout", () => {
+        repeater();
+      });
+
+
+
+    
+/*For footer to scrolltotop*/
+document.getElementById('logoLink').addEventListener('click', function(event) {
+    event.preventDefault();
+    scrollToTop();
+});
+
+function scrollToTop() {
+    const scrollOptions = {
+        top: 0,
+        left: 0,
+        behavior: 'smooth'// You can use 'auto' instead of 'smooth' for instant scrolling
+    };
+
+    window.scrollTo(scrollOptions);
+}
+/*End*/
+  </script>
+
+
+</body>
+
+</html>
