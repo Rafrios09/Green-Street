@@ -19,7 +19,7 @@ const closeMenuBtn = document.querySelector("#close-menu-btn");
 const newsbtn = document.querySelector("#navbtn2");
 // Toggle mobile menu on hamburger button click
 hamburgerBtn.addEventListener("click", () =>
-  header.classList.toggle("show-mobile-menu")
+  header.classList.toggle("show-mobile-menu"),
 );
 // Close mobile menu on close button click
 closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
