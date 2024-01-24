@@ -215,16 +215,15 @@ li {
 .section1 {
   position: relative;
   top: 10vh;
-  min-height: 100vh;
   background: #f7f6ee;
   padding: 4rem 0;
   padding-top: 2rem;
+  min-height: 100vh;
 }
 
 @media (max-width: 1228px) {
   .section1 {
     top: 10vh;
-    height: 140vh;
   }
 }
 
@@ -259,6 +258,10 @@ li {
 
   .small-text {
     font-size: 16px;
+  }
+
+  .section1{
+    height: 300vh;
   }
 }
 
@@ -461,19 +464,24 @@ li {
   .info-unit h2{
     font-size: 27px;
   }
-  .option2-info, .option1-info{
-    height: 130vh;
-  }
-  .option2-info .info-unit{
+  .option2-info .info-unit1{
     margin-top: 10px;
     color: #2E614D;
     height: 300px;
   }
 
-  .option1-info .info-unit{
+  .option1-info .info-unit1{
     margin-top: 10px;
     color: #2E614D;
     height: 300px;
+  }
+
+  .option1-info .info-unit p{
+    font-size: 16px;
+  }
+
+  .option2-info .info-unit p{
+    font-size: 16px;
   }
   
   .option2-info .infoimg{
@@ -507,14 +515,39 @@ li {
   .option2-info .info-unit{
     margin-top: 10px;
     color: #2E614D;
-    height: 300px;
+    height: 220px;
   }
 
   .option1-info .info-unit{
     margin-top: 10px;
     color: #2E614D;
-    height: 300px;
+    height: 220px;
   }
+
+  .option2-info .info-unit1{
+    margin-top: 10px;
+    color: #2E614D;
+    height: 350px;
+  }
+
+  .option1-info .info-unit1{
+    margin-top: 10px;
+    color: #2E614D;
+    height: 350px;
+  }
+
+  .option2-info .info-unit2{
+    margin-top: 10px;
+    color: #2E614D;
+    height: 280px;
+  }
+
+  .option1-info .info-unit2{
+    margin-top: 10px;
+    color: #2E614D;
+    height: 280px;
+  }
+
 
   .option2-info .infoimg{
     margin-top: 40px;

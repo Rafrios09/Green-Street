@@ -387,26 +387,19 @@ li {
     font-size: 30px;
   }
 
-  .next-btn {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-  }
-
-  .prev-btn {
-    position: absolute;
-    left: 10px;
-    top: 50%;
+  .next-btn:hover,
+  .prev-btn:hover {
+    color: white;
+    cursor: pointer;
   }
 
   .prev-btn:hover {
-    left: 2px;
-    transition: 0.5s;
+    left: 15px;
+
   }
 
   .next-btn:hover {
-    right: 2px;
-    transition: 0.5s;
+    right: 15px;
   }
 }
 
