@@ -371,6 +371,7 @@ li {
   font-size: 18px;
   font-weight: 500;
   font-family: 'Josefin Sans', sans-serif;
+  word-wrap: break-word;
 }
 
 .titleC{
