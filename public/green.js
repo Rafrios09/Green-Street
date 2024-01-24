@@ -9,7 +9,7 @@ const navCode = `<a class="logo" href="index.html"><img src="Images/RealLogo.png
         <li><a href="about.html">About us</a></li>
         <li><a href="index.html#newsltr" id="navbtn2">SIGN UP FOR OUR NEWSLETTER!</a></li>
       </ul>
-      <a href="../public/index.html#newsltr" id="navbtn">SIGN UP FOR OUR NEWSLETTER!</a>
+      <a href="index.html#newsltr" id="navbtn">SIGN UP FOR OUR NEWSLETTER!</a>
       <span id="hamburger-btn" class="material-symbols-outlined">menu</span>`;
 nav.innerHTML = navCode;
 

@@ -110,26 +110,37 @@
     <footer class="section5-Container">
       <div class="footer-flex">
         <div class="site-map">
-           <h2>Sitemap</h2>
-           <div class="link-flex">
-             <a href="index.html">Home</a>
-             <a href="energy_solutions.html">Energy Solutions</a>
-             <a href="jC.html">Compare</a>
-             <a href="Compare.html">About Us</a>
-             <a href="Contactus.html">Contact us</a>
-           </div>
-         </div>
-       <div class="logo-Container">
-         <div class="email">
-           <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg><a href="mailto:Greenstreet3301@gmail.com">
-             <p>Greenstreet3301@gmail.com</p></a>
-         </div>
-        <div class="img-margin">
-          <a href="#" id="FooterLogo.png">
-          <img src="../public/Images/FooterLogo.png">
-          </a>
+          <h2>Sitemap</h2>
+          <div class="link-flex">
+            <a href="index.html">Home</a>
+            <a href="energy_solutions.html">Energy Solutions</a>
+            <a href="jC.html">Compare</a>
+            <a href="Compare.html">About Us</a>
+            <a href="Contactus.html">Contact us</a>
+          </div>
         </div>
-      </div>
+        <div class="logo-Container">
+          <div class="email">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="16"
+              width="16"
+              viewBox="0 0 512 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+              /></svg
+            ><a href="mailto:Greenstreet3301@gmail.com">
+              <p>Greenstreet3301@gmail.com</p></a
+            >
+          </div>
+          <div class="img-margin">
+            <a href="#" id="FooterLogo.png">
+              <img src="Images/FooterLogo.png" />
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
     <!-- Footer section end -->
@@ -154,7 +165,7 @@
           if (sBtn_text.innerText == "Solar Energy") {
             optionInfo.innerHTML = `
                 <div class="info-unit infoimg">
-                  <img src="../public/Images/1-Solar.png">
+                  <img src="Images/1-Solar.png">
                 </div>
                 <div class="info-unit">
                   <h2>Tax incentives</h2>
@@ -182,7 +193,7 @@
           if (sBtn_text.innerText == "Natural Gas") {
             optionInfo.innerHTML = `
                             <div class="info-unit infoimg">
-                              <img src="../public/Images/1-Gas.png">
+                              <img src="Images/1-Gas.png">
                             </div>
                             <div class="info-unit">
                               <h2>Tax Incentives</h2>
@@ -210,7 +221,7 @@
           if (sBtn_text.innerText == "Wind Energy") {
             optionInfo.innerHTML = `
                             <div class="info-unit infoimg">
-                              <img src="../public/Images/1-Wind.png">
+                              <img src="Images/1-Wind.png">
                             </div>
                             <div class="info-unit">
                               <h2>Tax Incentives</h2>
@@ -240,7 +251,7 @@
           if (sBtn_text.innerText == "Geothermal Energy") {
             optionInfo.innerHTML = `
                 <div class="info-unit infoimg">
-                  <img src="../public/Images/1-Geo.png">
+                  <img src="Images/1-Geo.png">
                 </div>
                 <div class="info-unit">
                   <h2>Tax Incentives</h2>
@@ -269,7 +280,7 @@
           if (sBtn_text.innerText == "Hydro Energy") {
             optionInfo.innerHTML = `
                 <div class="info-unit infoimg">
-                  <img src="../public/Images/1-Hydro.png">
+                  <img src="Images/1-Hydro.png">
                 </div>
                 <div class="info-unit">
                   <h2>Tax Incentives</h2>
@@ -298,12 +309,8 @@
         });
       });
 
+      // for second drop down menu
 
-
-      
-// for second drop down menu 
-
-      
       const optionMenu2 = document.querySelector(".select-menu2"),
         selectBtn2 = optionMenu2.querySelector(".select-btn2"),
         options2 = optionMenu2.querySelectorAll(".option2"),
@@ -322,7 +329,7 @@
           if (sBtn_text2.innerText == "Solar Energy") {
             optionInfo2.innerHTML = `
                               <div class="info-unit infoimg">
-                                <img src="../public/Images/1-Solar.png">
+                                <img src="Images/1-Solar.png">
                               </div>
                               <div class="info-unit">
                                 <h2>Tax incentives</h2>
@@ -350,7 +357,7 @@
           if (sBtn_text2.innerText == "Natural Gas") {
             optionInfo2.innerHTML = `
                             <div class="info-unit infoimg">
-                              <img src="../public/Images/1-Gas.png">
+                              <img src="Images/1-Gas.png">
                             </div>
                             <div class="info-unit">
                               <h2>Tax Incentives</h2>
@@ -378,7 +385,7 @@
           if (sBtn_text2.innerText == "Wind Energy") {
             optionInfo2.innerHTML = `
                               <div class="info-unit infoimg">
-                                <img src="../public/Images/1-Wind.png">
+                                <img src="Images/1-Wind.png">
                               </div>
                               <div class="info-unit">
                                 <h2>Tax Incentives</h2>
@@ -408,7 +415,7 @@
           if (sBtn_text2.innerText == "Geothermal Energy") {
             optionInfo2.innerHTML = `
                               <div class="info-unit infoimg">
-                                <img src="../public/Images/1-Geo.png">
+                                <img src="Images/1-Geo.png">
                               </div>
                               <div class="info-unit">
                                 <h2>Tax Incentives</h2>
@@ -437,7 +444,7 @@
           if (sBtn_text2.innerText == "Hydro Energy") {
             optionInfo2.innerHTML = `
                               <div class="info-unit infoimg">
-                                <img src="../public/Images/1-Hydro.png">
+                                <img src="Images/1-Hydro.png">
                               </div>
                               <div class="info-unit">
                                 <h2>Tax Incentives</h2>
