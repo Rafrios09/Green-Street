@@ -29,7 +29,7 @@ app.post("/subscribe", (req, res) => {
     url: "https://us21.api.mailchimp.com/3.0/lists/a0a071384b",
     method: "POST",
     headers: {
-      Authorization: "auth 3c769b658739d45a7805e58eba734105-us21",
+      Authorization: process.env.API_KEY,
     },
     body: mcDataPost,
   };
