@@ -236,6 +236,9 @@ li {
   text-shadow: -5px 0 #e3e0c4, 0 5px #acbb96, 0 -2px #2e614d;
 }
 
+
+
+
 @media (max-width: 820px) {
   .stats-content h2 {
     font-size: 90px;
